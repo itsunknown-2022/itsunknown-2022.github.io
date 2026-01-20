@@ -1,2 +1,1 @@
-# profile-0x
-a sample profile portfolio
+# about developer profile
