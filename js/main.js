@@ -165,7 +165,9 @@ let typeSpeed = 100;
 function typeEffect() {
     if (!dynamicText) return;
 
-    const currentMessage = messages[messageIndex];
+    const currentMessage = messages[messageIndex].endsWith('.') 
+    ? messages[messageIndex] 
+    : messages[messageIndex] + '.';
     
     if (isDeleting) {
         dynamicText.textContent = currentMessage.substring(0, charIndex - 1);
